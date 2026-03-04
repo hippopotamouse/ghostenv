@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+.npmrc
+
+# Local Vaults (Security!)
+# These should never be in git, even in the source repo
+*.json
+!package.json
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Test workspaces
+final_audit_workspace/
+cli_test_folder/
+dot_test/

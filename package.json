@@ -1,0 +1,45 @@
+{
+  "name": "ghostenv",
+  "version": "1.0.1",
+  "description": "Secure, local-first environment management system. Ghost your .env files and centralize secrets in a secure global vault.",
+  "main": "index.js",
+  "bin": {
+    "ghostenv": "bin/cli.js",
+    "genv": "bin/cli.js"
+  },
+  "files": [
+    "index.js",
+    "migrate.js",
+    "schemas.js",
+    "utils.js",
+    "bin/",
+    "README.md"
+  ],
+  "scripts": {
+    "postinstall": "node bin/install-hook.js",
+    "test": "node simple-test.js"
+  },
+  "keywords": [
+    "secrets",
+    "environment",
+    "env",
+    "vault",
+    "security",
+    "config",
+    "cli",
+    "tui",
+    "ghostenv"
+  ],
+  "author": "Hippopotamouse",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.1.0",
+    "clipboardy": "^2.3.0",
+    "conf": "^10.2.0",
+    "picocolors": "^1.1.1"
+  }
+}
